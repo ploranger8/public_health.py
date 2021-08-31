@@ -35,18 +35,18 @@ else:
             print ('Your friend might have COVID and now you are now a close contact, please Quarantine for two weeks')
             time.sleep(2)
             print ('Sorry, you did not win this time')
-            play_game = input('Do you want to play again, y or n: ')
+            play_game = input('Do you want to play again, y or n: ') # give player option to replay game
         else: # player enters 6 or greater
             print('You were smart to stay at least 6 feet away from your friend')
             time.sleep(2)
             print ('It is time to get on the bus, did you remember to bring a mask?')
             time.sleep(2)
-            if item != 'm':
+            if item != 'm': # check to see if player brought mask to school
                 print ('Sorry, you forgot to bring a mask and cannot get on the bus!')
                 time.sleep(2)
                 print ('You will need to return home to find a way to get to school')
                 play_game = input('Do you want to play again, y or n: ')
-            else:
+            else: # player has mask, game continues
                 print ('Good thing you remembered to bring your mask')
                 time.sleep(2)
                 # bus brings students to school, they arrive and have hand sanitizer choice
